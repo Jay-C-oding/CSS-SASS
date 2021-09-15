@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <img src="../assets/mypic.jpeg" alt="selfie" class="picture" />
+    <h1>
+      Deine Herausforderung freundliche Frontend-Entwicklerin <br />
+      mit Designer Wurzeln <br />in Hannover
+    </h1>
   </div>
 </template>
+
+<style scoped>
+.picture {
+  width: 30vw;
+  padding: 3vw;
+}
+</style>
