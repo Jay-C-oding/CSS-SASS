@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="logoBox">
-      <img src="../img/logo-white.png" alt="Logo" class="logo" />
+      <img :src="image" alt="Logo" class="logo" />
     </div>
     <div class="textBox">
       <h1 class="headingPrimary">
@@ -14,8 +14,14 @@
 </template>
 
 <script>
+import image from '../assets/img/logo-white.png';
 export default {
   name: 'natour',
+  data: function() {
+    return {
+      image: image,
+    };
+  },
 };
 </script>
 
