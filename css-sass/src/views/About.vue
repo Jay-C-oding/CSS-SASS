@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img src="../assets/mypic.jpeg" alt="selfie" class="picture" />
+    <img src="@/assets/mypic.jpeg" alt="picture of me" class="picture" />
     <h1>
       Deine Herausforderung freundliche Frontend-Entwicklerin <br />
       mit Designer Wurzeln <br />in Hannover
