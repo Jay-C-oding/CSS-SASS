@@ -14,7 +14,8 @@
 </template>
 
 <script>
-import image from '../assets/img/logo-white.png';
+import image from '../assets/img-natour/logo-white.png';
+
 export default {
   name: 'natour',
   data: function() {
@@ -44,7 +45,7 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #7ed56fb4, #28b485),
-    url(../assets/img/hero.jpg);
+    url(../assets/img-natour/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);

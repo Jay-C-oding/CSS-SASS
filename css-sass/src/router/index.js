@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import About from '../views/About.vue';
 import NaTour from '../views/NaTour.vue';
 import LoopLab from '../views/LoopLab.vue';
+import Intro from '../views/Intro.vue';
 const routes = [
   {
     path: '/',
@@ -10,12 +10,9 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: About,
+    path: '/intro',
+    name: 'Intro',
+    component: Intro,
   },
   {
     path: '/natour',
@@ -32,7 +29,6 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  mode: 'history',
 });
 
 export default router;

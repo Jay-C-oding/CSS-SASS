@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="image" alt="picture of me" />
+    <img :src="pic" alt="picture of me" class="picture" />
     <h1>
       Deine Herausforderung freundliche Frontend-Entwicklerin <br />
       mit Designer Wurzeln <br />in Hannover
@@ -9,12 +9,13 @@
 </template>
 
 <script>
-import selfie from '../assets/mypic.jpeg';
+import selfie from '../assets/img-about/mypic.jpeg';
+
 export default {
-  name: 'about',
+  name: 'About',
   data: function() {
     return {
-      image: selfie,
+      pic: selfie,
     };
   },
 };
@@ -22,8 +23,6 @@ export default {
 
 <style scoped>
 .picture {
-  width: 20vw;
-  height: 30vh;
-  padding: 2vw;
+  width: 30vw;
 }
 </style>
