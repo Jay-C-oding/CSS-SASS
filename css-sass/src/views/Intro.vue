@@ -1,14 +1,14 @@
 <template>
-  <intro></intro>
+  <introduction></introduction>
 </template>
 
 <script>
-import intro from '../components/intro.vue';
+import introduction from '../components/intro.vue';
 
 export default {
   name: 'Intro',
   components: {
-    intro,
+    introduction,
   },
 };
 </script>
