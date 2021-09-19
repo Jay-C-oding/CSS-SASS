@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import NaTour from '../views/NaTour.vue';
-
+import LoopLab from '../views/LoopLab.vue';
 const routes = [
   {
     path: '/',
@@ -22,11 +22,17 @@ const routes = [
     name: 'NaTour',
     component: NaTour,
   },
+  {
+    path: '/looplab',
+    name: 'LoopLab',
+    component: LoopLab,
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  mode: 'history',
 });
 
 export default router;
