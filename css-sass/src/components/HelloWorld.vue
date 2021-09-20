@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Powered by Vue, Vuex and Vue-router
+      Powered by Vue, Vue-router and SASS
     </p>
   </div>
 </template>
@@ -17,4 +17,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style>
+.hello {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+}
+</style>

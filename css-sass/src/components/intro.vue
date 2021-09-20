@@ -1,11 +1,13 @@
 <template>
   <div>
-    <header>
+    <header id="header">
       <img :src="image" alt="myPic" class="picture" />
-      <h2 class="title">
-        Deine Herausforderung freundliche <br />
-        Entwicklerin mit Designer Wurzeln
-      </h2>
+      <div class="title">
+        <h1 class="titleText">
+          Deine Herausforderung freundliche <br />
+          Entwicklerin mit Designer Wurzeln
+        </h1>
+      </div>
     </header>
     <cv></cv>
   </div>
@@ -29,23 +31,28 @@ export default {
 </script>
 
 <style scoped>
-header {
-  height: 36vh;
-  background-color: #e0d9cf;
-  padding: 2%;
+#header {
+  height: 35vh;
   margin-right: 5vw;
   margin-left: 5vw;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .picture {
-  width: 25vw;
-  position: absolute;
-  left: 10%;
+  width: 20%;
+  position: relative;
 }
 .title {
   position: relative;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 70%;
   margin: 0;
+  width: 40vw;
+  height: 15vh;
+}
+.titleText {
+  font-size: 1.5rem;
+  display: contents;
+  color: #464543;
 }
 </style>
