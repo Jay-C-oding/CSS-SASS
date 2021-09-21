@@ -1,10 +1,6 @@
 <template>
   <aside>
-    <article
-      class="master4"
-      data-aos="fade-left"
-      data-aos-anchor-placement="top-bottom"
-    >
+    <article data-aos="zoom-in-left" class="master4">
       <h5 class="title">Master in Landschaftsarchitektur</h5>
       <h6 class="subtitle">LUH, 10.2015 - 09.2019</h6>
       <p></p>
