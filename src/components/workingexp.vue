@@ -1,7 +1,7 @@
 <template>
   <aside>
     <article
-      data-aos="fade-up"
+      data-aos="fade-right"
       data-aos-anchor-placement="top-center"
       class="work1"
     >

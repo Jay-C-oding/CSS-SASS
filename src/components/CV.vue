@@ -24,6 +24,7 @@
       </section>
       <section id="studium">
         <h4 class="subText">Studium | Bildung</h4>
+        <studium-bildung></studium-bildung>
       </section>
     </div>
   </div>
@@ -31,10 +32,13 @@
 
 <script>
 import workingExp from '../components/workingexp.vue';
+import studiumBildung from './studium-bildung.vue';
+
 export default {
   name: 'cv',
   components: {
     workingExp,
+    studiumBildung,
   },
 };
 </script>
@@ -56,7 +60,7 @@ export default {
 }
 #arbeit {
   background-color: #787a79;
-  height: 100vh;
+  height: 60vh;
   width: 50%;
   color: #e0d9cf;
 }
