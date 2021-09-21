@@ -27,6 +27,8 @@ export default {
 header {
   border-bottom: 2px solid darkslategrey;
   max-height: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 #logo {
   height: 25px;
@@ -41,6 +43,7 @@ header {
   grid-area: menu;
   display: flex;
   justify-content: space-between;
+  padding-top: 3vh;
 }
 
 .menuIcon {

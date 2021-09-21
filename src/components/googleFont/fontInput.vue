@@ -101,7 +101,7 @@ export default {
 <style scoped>
 .nav {
   border: 1px solid darkslategrey;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   padding: 5px;
   color: darkslategrey;
   font-family: sans-serif;
@@ -109,8 +109,10 @@ export default {
   text-align: center;
   height: 3vh;
   display: flex;
-
+  margin-left: 8vw;
+  margin-right: 8vw;
   margin-top: 2vh;
+  margin-bottom: 1vh;
   justify-content: space-around;
   align-items: center;
 }
@@ -165,7 +167,7 @@ export default {
 .fa-plus-circle {
   position: relative;
   left: 75%;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 .fontType {
   margin-top: 0.5vw;
