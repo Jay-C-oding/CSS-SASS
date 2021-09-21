@@ -21,7 +21,19 @@
         <h4>LoopLAB</h4>
         <p>Bootstrap Projekt</p>
       </article>
+      <article>
+        <h4>Google Fonts Clone</h4>
+        <p>API, Axios und allgemeine Vue Nutzung</p>
+      </article>
     </section>
+    <h2>Reicht noch nicht aus?</h2>
+    <span
+      ><h4>Check mal hier</h4>
+      <br />
+      <a href="http://github.com/Jay-C-oding/tsc-socket"
+        >Typescript und Socket.io</a
+      >
+    </span>
   </div>
 </template>
 
