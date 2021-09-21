@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/intro">Introduction</router-link> |
       <router-link to="/natour">NaTour</router-link> |
-      <router-link to="/looplab">LoopLAB</router-link>
+      <router-link to="/looplab">LoopLAB</router-link> |
+      <router-link to="/googlefontclone">Google Fonts Clone</router-link>
     </nav>
     <router-view />
   </div>

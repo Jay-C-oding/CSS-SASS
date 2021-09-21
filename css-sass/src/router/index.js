@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import NaTour from '../views/NaTour.vue';
 import LoopLab from '../views/LoopLab.vue';
 import Intro from '../views/Intro.vue';
+import googleFontClone from '../views/googleFontClone';
 const routes = [
   {
     path: '/',
@@ -23,6 +24,11 @@ const routes = [
     path: '/looplab',
     name: 'LoopLab',
     component: LoopLab,
+  },
+  {
+    path: '/googlefontclone',
+    name: 'GoogleFontClone',
+    component: googleFontClone,
   },
 ];
 
