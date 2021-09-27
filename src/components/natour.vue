@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="header__logoBox">
+    <div class="header__logobox">
       <img :src="image" alt="Logo" class="header__logo" />
     </div>
     <div class="header__textBox">
@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/base/base';
+@import '../style/base/animations';
+@import '../style/base/typography';
+@import '../style/base/utility';
+
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -54,55 +59,53 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   position: relative;
-}
 
-.header__logoBox {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 35px;
-}
-
-.header__textBox {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__logobox {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+  &__logo {
+    height: 3rem;
+  }
+  &__textBox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .headingPrimary {
   color: white;
   backface-visibility: hidden;
-  margin-bottom: 20px;
-}
+  margin-bottom: 2rem;
 
-.headingPrimary--Main {
-  display: block;
-  font-size: 60px;
-  letter-spacing: 35px;
-  font-weight: 400;
+  &--Main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    font-weight: 400;
 
-  animation-name: moveInLeft;
-  animation-duration: 1.8s;
-}
+    animation-name: moveInLeft;
+    animation-duration: 1.8s;
+  }
 
-.headingPrimary--Sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 20px;
-  animation-name: moveInRight;
-  animation-duration: 2.3s;
+  &--Sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    animation-name: moveInRight;
+    animation-duration: 2.3s;
+  }
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
     transform: translateX(10px);
@@ -116,54 +119,66 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-}
 
-.btn--white {
-  background-color: white;
-  color: #777;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+  }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.253);
-}
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-}
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all, 0.4s;
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.253);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all, 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
 </style>
